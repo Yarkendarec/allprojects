@@ -1,0 +1,47 @@
+.weather-app {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.weather-app h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.weather-app form {
+  margin-bottom: 20px;
+}
+
+.weather-app input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.weather-app button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather-app button:hover {
+  background-color: #0056b3;
+}
+
+.weather-app .error {
+  color: #ff0000;
+}
+
+.weather-app .weather-info {
+  margin-top: 20px;
+  text-align: left;
+}

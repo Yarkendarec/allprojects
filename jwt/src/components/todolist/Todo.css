@@ -1,0 +1,112 @@
+body {
+  background-color: #f0f0f0; /* Светло-серый фон */
+  font-size: 24px; /* Уменьшенный размер шрифта */
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.task-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  padding: 15px; /* Уменьшенный padding */
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 12px; /* Уменьшенный размер шрифта */
+}
+
+.todo-list {
+  max-width: 600px; /* Уменьшенная ширина списка */
+  margin: 0 auto;
+}
+
+.todo-item,
+.subtask {
+  display: flex;
+  flex-direction: column; /* Колонка для основной задачи и подзадач */
+  padding: 15px; /* Уменьшенный padding */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 12px; /* Уменьшенный размер шрифта */
+}
+
+.task-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-buttons {
+  display: flex;
+}
+
+.subtask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  font-weight: bold; /* Жирный текст для подзадач */
+  font-size: 18px; /* Размер текста в 1.5 раза больше */
+}
+
+.subtask-buttons {
+  display: flex;
+  margin-left: 10px; /* Уменьшенное расстояние между кнопками */
+}
+
+.subtask span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.button-todo {
+  margin-left: 10px; /* Уменьшенное расстояние между кнопками */
+  padding: 7.5px 15px; /* Уменьшенный padding */
+  border: 2px solid #403ea7; /* Контур кнопок */
+  background-color: #3c6a9c; /* Синий цвет фона кнопок */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px; /* Уменьшенный размер шрифта */
+}
+
+.button-todo:hover {
+  background-color: #2a6d3b;
+  border: 2px solid #0056b3; /* Контур при наведении */
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.subtasks input[type="text"], .memo {
+  padding: 15px; /* Уменьшенный padding */
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 12px; /* Уменьшенный размер шрифта */
+}
+
+.memo {
+  width: calc(100% - 30px); /* Подстраивается под размер контейнера */
+  margin-top: 10px;
+}
+
+.task-main span {
+  font-weight: bold; /* Жирный текст для задач */
+  font-size: 18px; /* Размер текста в 1.5 раза больше */
+}
